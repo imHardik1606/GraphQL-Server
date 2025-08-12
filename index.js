@@ -7,8 +7,9 @@ import { typeDefs } from './schema';
 // server setup
 const server = new ApolloServer({
     // typeDefs shows type definitions for the data types and relation they have with other data types
-    typeDefs
+    typeDefs,
     // resolvers how we respond to queries and different data on the graph
+    
 })
 
 const { url } = await startStandaloneServer(server, {
